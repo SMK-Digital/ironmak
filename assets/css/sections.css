@@ -1,0 +1,199 @@
+/* Why Import Section */
+.why-import-section {
+    background-color: #c0740383;
+    /* padding: 60px 0; */
+    margin: 0 5px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.623);
+}
+
+.why-import-section h2 {
+    font-family: 'Audiowide', Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+.text-ironmak {
+    font-family: 'Automata', Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    color: #eb8a09;
+    margin-bottom: 30px;
+    
+}
+
+.card {
+    border: 2px solid #eb8a09 ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.623);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-bottom: inset 10px #4b310f;
+}
+
+.card-title {
+    margin-top: 10px;
+    border-top: #aa650b 2px solid;
+    border-radius: 6px;
+    font-family: 'Automata', Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    color: #4b310f;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666666;
+    border-bottom: #aa650b 2px solid;
+    border-radius: 6px;
+}
+
+/* Icones */
+.icon-size {
+    font-size: 3rem; /* Tamanho do ícone */
+    color: #ffffff;
+    background-color: #eb8a09;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 100%;
+    border: groove 5px #aa650b;
+}
+
+@media (max-width: 768px) {
+    .why-import-section h2 {
+        font-size: 2rem;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .icon-size {
+        font-size: 2.5rem; /* Reduz o tamanho do ícone para dispositivos móveis */
+    }
+}
+
+/* Represent Section */
+.representations {
+
+    padding: 60px 0;
+}
+
+.representations h2 {
+    font-family: 'Audiowide', Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    color: #eb8a09; /* Cor da paleta Iron Mak */
+    margin-bottom: 30px;
+}
+
+.card-rep {
+    background: #0000007e;
+    border-top: 10px groove #eb8a09;
+    border-bottom: 2px solid #eb8a09 ;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(255, 254, 254, 0.1);
+}
+
+.card-rep:hover {
+    border-top: 2px solid #eb8a09;
+    border-bottom: 16px groove #eb8a09;
+    transform: translateY(-10px); /* Efeito de hover */
+}
+
+.card-img-top {
+    max-height: 200px;
+    object-fit: contain; 
+    margin: 20px 0;
+}
+
+
+.card-text-rep {
+    font-size: 1.2rem;
+    color: #666666;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .representations h2 {
+        font-size: 2rem; /* Reduz o tamanho da fonte do título para dispositivos menores */
+    }
+
+    .card-text {
+        font-size: 0.9rem; /* Reduz o tamanho do texto dos cards */
+    }
+}
+
+/* Sessão de Contato */
+.contact {
+    margin: 0 10px;
+    border-radius: 10px;
+    background-color: #c0740383;
+    padding: 60px 0;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.contactForm {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact .form-control {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+}
+
+.contact .form-control:focus {
+    border-color: #ff6600;
+    box-shadow: none;
+}
+
+.contact .cta-button {
+    font-size: 1.2rem;
+    padding: 12px 36px;
+    background-color: #ff6600;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.contact .cta-button:hover {
+    background-color: #ff3300;
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .contact h2 {
+        font-size: 2rem;
+    }
+    
+    .contact .form-control {
+        font-size: 0.9rem;
+    }
+    
+    .contact .cta-button {
+        font-size: 1rem;
+        padding: 10px 30px;
+    }
+}
