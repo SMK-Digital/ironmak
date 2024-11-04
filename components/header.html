@@ -1,61 +1,47 @@
-<div class="bg-dark text-white">
-    <!-- Navbar Offcanvas -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid d-flex align-items-center">
-            <!-- Logo -->
-            <a href="#" class="logo">
-                <img src="assets/img/IRON-MAK-white.png" alt="IronMak Equipamentos" class="img-fluid">
-            </a>
+<div class="navbar sticky-top">
+    <div class="logo">
+        <a href="/">
+            <img src="/assets/img/IRON-MAK-white.png" alt="logo ironmak">
+        </a>
+    </div>
+    <ul class="links">
+        <li><a href="/about.html" class="nav-link">Sobre</a></li>
+        <li><a href="#representations">Representações <i class="bi bi-caret-down-fill"></i> </a>
+            <!-- <ul class="sub-links">
+                <li><a href="#goodeng">Goodeng</a></li>
+                <li><a href="#sunhunk">Sunhunk</a></li>
+                <li><a href="#hbs">HBS</a></li>
+            </ul> -->
+        </li>
+        <li><a href="#why-import">Serviços</a>
+            <!-- <ul class="sub-links">
+                <li><a href="#">Peças de Reposição</a></li>
+                <li><a href="#">Consultoria</a></li>
+            </ul> -->
+        </li>
+        <li><a href="#contact">Contato</a></li>
+    </ul>
+    <a href="#" class="action__btn">Whatsapp</a>
+    <div class="toggle__btn">
+        <i class="bi bi-list"></i>
+    </div>
 
-            <!-- Toggle Button for Offcanvas -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-        <!-- Offcanvas Menu -->
-        <div class="offcanvas offcanvas-end  text-white" tabindex="-1" id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-                <img src="assets/img/IRON-MAK-white.png" alt="IronMak Equipamentos" class="img-fluid offcanvas-title"
-                    id="offcanvasNavbarLabel">
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Serviços
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                            <!-- Representações com dropdown aninhado -->
-                            <li class="dropdown-submenu">
-                                <a class="dropdown-item dropdown-toggle" href="#">Representações</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#representations1">Goodeng Brasil</a></li>
-                                    <li><a class="dropdown-item" href="#representations2">Sunhunk Brasil</a></li>
-                                    <li><a class="dropdown-item" href="#representations3">HBS Brasil</a></li>
-                                </ul>
-                            </li>
-                            <!-- Outros itens do menu -->
-                            <li><a class="dropdown-item" href="#">Peças de Reposição</a></li>
-                            <li><a class="dropdown-item" href="#">Consultoria</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contato</a>
-                    </li>
-                </ul>
-            </div>
-                        
-        </div>
-</div>
-</nav>
+    <div class="dropdown__menu">
+        <li><a href="/about.html">Sobre</a></li>
+        <li><a href="#representations">Representações</a>
+            <!-- <ul class="sub-links">
+                <li><a href="#goodeng">Goodeng</a></li>
+                <li><a href="#sunhunk">Sunhunk</a></li>
+                <li><a href="#hbs">HBS</a></li>
+            </ul> -->
+        </li>
+        <li><a href="#why-import">Serviços</a>
+            <!-- <ul class="sub-links">
+                <li><a href="#">Peças de Reposição</a></li>
+                <li><a href="#">Consultoria</a></li>
+            </ul> -->
+        </li>
+        <li><a href="contact">Contato</a></li>
+        <li><a href="#" class="action__btn_dropdown">Whatsapp</a></li>
+    </div>
 </div>

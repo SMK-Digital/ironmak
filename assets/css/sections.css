@@ -1,3 +1,104 @@
+/* Sessão About */
+.about {
+    /* background-color: #c0740383; */
+    padding: 60px 0;
+    margin: 0 5px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.623);
+}
+
+.about h2 {
+    text-align: center;
+    font-family: 'Audiowide', Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    color: #eb8a09;
+    margin-bottom: 30px;
+}
+
+.mission p {
+    text-align: center;
+    font-family: 'Automata', Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; /* Adiciona espaço entre os cards */
+}
+
+.card-about {
+    border: 2px solid #eb8a09;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.623);
+    transition: transform 0.3s;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    padding: 20px;
+    flex: 1 1 30%; /* Flexibilidade para os cards */
+}
+
+.card-about:hover {
+    transform: translateY(-10px);
+    border-bottom: inset 10px #4b310f;
+}
+
+.card-title-about {
+    margin-top: 10px;
+    border-top: #aa650b 2px solid;
+    border-radius: 6px;
+    font-family: 'Automata', Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    color: #fff;
+ 
+}
+
+.card-text-about {
+    padding: 10px 3px;
+    font-size: 1.2rem;
+    color: #666666;
+    border-bottom: #aa650b 2px solid;
+    border-radius: 6px;
+}
+
+/* Icones */
+.icon-size-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem; /* Tamanho do ícone */
+    color: #ffffff;
+    background-color: #eb8a09;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    border-radius: 100%;
+    border: groove 5px #aa650b;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .about h2 {
+        font-size: 2rem;
+    }
+
+    .card-title-about {
+        font-size: 1.2rem;
+    }
+
+    .card-text-about {
+        font-size: 0.9rem;
+    }
+
+    .icon-size-about {
+        font-size: 2.5rem; /* Reduz o tamanho do ícone para dispositivos móveis */
+    }
+}
+
+
 /* Why Import Section */
 .why-import-section {
     background-color: #c0740383;
@@ -92,7 +193,7 @@
 .representations h2 {
     font-family: 'Audiowide', Arial, Helvetica, sans-serif;
     font-size: 2.5rem;
-    color: #eb8a09; /* Cor da paleta Iron Mak */
+    color: #eb8a09;
     margin-bottom: 30px;
 }
 
@@ -143,16 +244,22 @@
 }
 
 .contact h2 {
+    font-family: 'Audiowide', Arial, Helvetica, sans-serif;
     font-size: 2.5rem;
-    font-weight: 700;
+    color: #eb8a09;
     margin-bottom: 30px;
 }
 
 .contactForm {
-    background-color: #ffffff;
+    background-color: #4d2500;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.contactForm label{
+    font-family: 'Automata', Arial, Helvetica, sans-serif;
+    color: #ffffff;
 }
 
 .contact .form-control {

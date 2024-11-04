@@ -1,0 +1,38 @@
+.about-page {
+    position: relative;
+    padding: 60px 0;
+    margin: 0 5px;
+    border-radius: 5px;
+    background-image: url('/assets/img/img-sobre-ironmak.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.623);
+}
+
+.about-content-page {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.about-page h2{
+    text-shadow: 2px 2px 5px #000;
+}
+
+.about-page .mission{
+    background: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .about-page h2{
+        text-align: right;
+    }
+
+}

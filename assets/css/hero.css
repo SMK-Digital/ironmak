@@ -1,12 +1,14 @@
 /* Hero Section */
+
 .hero {
     position: relative;
+    top: -60px;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    z-index: -1;
+    z-index: 1;
     overflow: hidden;
 }
 

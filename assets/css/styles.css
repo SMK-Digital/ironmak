@@ -5,6 +5,7 @@
 @import url('sections.css');
 @import url('footer.css');
 @import url('buttons.css');
+@import 'about.css';
 
 /* Estilos globais */
 * {
@@ -25,5 +26,14 @@ body {
         linear-gradient(90deg, rgba(42, 26, 1, 0.72) 2%, #0f0e0e 0, #0f0e0e 98%, rgba(42, 26, 1, 0.72) 0%)0 0 #0f0e0e;
     background-size: 26px 39px;
     background-color: #0f0e0e;
+
+    scroll-behavior: smooth;
 }
 
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
