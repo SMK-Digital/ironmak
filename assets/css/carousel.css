@@ -213,7 +213,7 @@
 }
 
 /* Ajustes adicionais para dispositivos menores que 480px */
-@media (max-width: 482px) {
+@media (max-width: 375px) {
     .item .bg::before {
         width: 150px;
         height: 150px;
