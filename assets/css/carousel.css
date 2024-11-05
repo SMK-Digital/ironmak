@@ -162,7 +162,7 @@
         flex-direction: column;
     }
 
-    .item.active .info-box {
+    .item .info-box {
         width: 90%;
         max-width: 450px;
         text-align: center;
