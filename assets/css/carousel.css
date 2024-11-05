@@ -162,12 +162,12 @@
         flex-direction: column;
     }
 
-    .item .info-box {
-        width: 90%;
+    .item.item.active .info-box {
+        width: 85%;
         max-width: 450px;
         text-align: center;
         position: relative;
-        margin-bottom: 15px;
+        /* margin-bottom: 15px; */
         border: 2px solid red;
 
     }
@@ -211,13 +211,19 @@
         max-width: 100%;
         height: auto;
     }
+
+    .item .bg::before {
+        width: 80px;
+        height: 80px;
+        filter: blur(80px);
+    }
 }
 
 /* Ajustes adicionais para dispositivos menores que 480px */
 @media (max-width: 375px) {
     .item .bg::before {
-        width: 150px;
-        height: 150px;
+        width: 80px;
+        height: 80px;
         filter: blur(80px);
     }
 
@@ -227,5 +233,15 @@
 
     .info-item p {
         font-size: 0.9rem;
+    }
+
+    .item.item.active .info-box {
+        width: 85%;
+        max-width: 450px;
+        text-align: center;
+        position: relative;
+        /* margin-bottom: 15px; */
+        border: 2px solid red;
+
     }
 }
