@@ -14,7 +14,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/assets/img/img-sobre-ironmak.jpg');
+    background-image: url("/assets/img/img-sobre-ironmak.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
