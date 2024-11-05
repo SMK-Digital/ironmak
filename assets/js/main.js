@@ -64,6 +64,15 @@ function initializeNavbarToggle() {
         toggleBtnIcon.classList.toggle('bi-x-lg', isOpen);
         toggleBtnIcon.classList.toggle('bi-bars', !isOpen);
     };
+
+    // Fecha o menu ao clicar em qualquer link dentro dele
+    dropDownMenu.querySelectorAll('a').forEach(link => {
+        link.onclick = function () {
+            dropDownMenu.classList.remove('open');
+            toggleBtnIcon.classList.add('bi-bars');
+            toggleBtnIcon.classList.remove('bi-x-lg');
+        };
+    });
 }
 
 

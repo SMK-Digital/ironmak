@@ -48,4 +48,8 @@
         text-align: right;
     }
 
+    .about-page::before {
+        background-attachment: fixed;
+        background-size: cover;
+    }
 }

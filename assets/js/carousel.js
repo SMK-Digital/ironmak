@@ -25,7 +25,7 @@ thumbs.forEach((thumb, ind) => {
 
         setTimeout(() => {
             items[index].classList.add('active');
-        }, 10);
+        }, 100);
 
 
         const selectItem = document.querySelector('.select.active');
@@ -33,7 +33,7 @@ thumbs.forEach((thumb, ind) => {
 
         setTimeout(() => {
             thumb.classList.add('active');
-        }, 10);
+        }, 100);
     });
 });
 
