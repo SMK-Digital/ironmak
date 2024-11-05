@@ -3,12 +3,25 @@
     padding: 60px 0;
     margin: 0 5px;
     border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.623);
+    overflow: hidden;
+}
+
+.about-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url('/assets/img/img-sobre-ironmak.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.623);
+    filter: grayscale(70%);
+    z-index: -1;
 }
+
 
 .about-content-page {
     display: flex;
