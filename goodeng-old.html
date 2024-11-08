@@ -14,7 +14,7 @@
 
     <!-- CSS personalizado -->
     <link rel="stylesheet" href="assets/css/styles.css">
- 
+    <link rel="stylesheet" href="assets/css/carousel.css">
     <!-- css animate CSS -->
     <link rel="stylesheet" href="assets/lib/animate/animate.min.css">
 
@@ -25,51 +25,81 @@
     <!-- Header -->
     <header  id="header-placeholder" class="sticky-top"></header>
     <main>
-        <section class="section__pages">
-            <div class="container__pages">
-                <div class="bg__pages">
-                    <div class="logo__pages">
-                        <img src="assets/img/goodeng-brasil-color.png" alt="Logo Goodeng Brasil">
+        <section>
+            <div class="carousel">
+                <div class="item active">
+                    <div class="bg"></div>
+                    <div class="info-box">
+                        <div class="info-slider">
+                            <div class="info-item" style="--i:0;">
+                                <h2>Goodeng Brasil</h2>
+                                <p>
+                                    Fundada em maio de 2002 na China, a Goodeng é uma empresa de alta tecnologia dedicada ao desenvolvimento, fabricação e serviços para equipamentos de perfuração não destrutiva. 
+                                </p>
+                                <!-- <a href="#" class="btn btn-primary">Saiba mais</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <div class="img-slider">
+                            <div class="img-item" style="--i:0;">
+                                <img src="assets/img/gd-200ls.png">
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>  
-        </section>
-        <section class="pages__content">
-            <div class="pages__text wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s">
-                <p>
-                    Fundada em maio de 2002 na China, a Goodeng é uma empresa de alta tecnologia 
-                    dedicada ao desenvolvimento, fabricação e serviços para equipamentos de perfuração não destrutiva. 
-                </p>
+                <div class="item">
+                    <div class="bg"></div>
+                    <div class="info-box">
+                        <div class="info-slider">
+                            <div class="info-item" style="--i:1;">
+                                <h2>Goodeng Brasil</h2>
+                                <p>
+                                    Com uma linha completa de perfuratrizes horizontais direcionais de 5 a 1200 toneladas, a Goodeng atende tanto ao mercado chinês quanto ao de exportação, destacando-se pela inovação e reconhecimento internacional. 
+                                </p>
+                                <!-- <a href="#" class="btn btn-primary">Saiba mais</a> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="img-box">
+                        <div class="img-slider">
+                            <div class="img-item" style="--i:1;">
+                                <img src="assets/img/gs-1600.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="bg"></div>
+                    <div class="info-box">
+                        <div class="info-slider">
+                            <div class="info-item" style="--i:2;">
+                                <h2>Goodeng Brasil</h2>
+                                <p>
+                                    Agora, com a Ironmak como representante oficial no Brasil, essa expertise em máquinas HDD de alta qualidade está disponível no país, oferecendo as mais avançadas soluções para o setor.
+                                </p>
+                                <a href="https://www.goodeng.com/pt" class="btn btn-primary">Visite o site</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="img-box">
+                        <div class="img-slider">
+                            <div class="img-item" style="--i:2;">
+                                <img src="assets/img/gs-320-ls.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="thumb">
+                    <li class="select active"> <img src="assets/img/thumb-goodeng.png"></li>
+                    <li class="select"> <img src="assets/img/thumb-goodeng.png"></li>
+                    <li class="select"> <img src="assets/img/thumb-goodeng.png"></li>
+                </ul>
+
             </div>
-            <div class="pages__image wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1s">
-                <img src="assets/img/gd-200ls.png" alt="imagem gd-200ls">
-            </div>
-        </section>
-        <section class="pages__content pages__bg">
-            <div class="pages__image wow fadeInRight"data-wow-duration="2s" data-wow-delay="1s">
-                <img src="assets/img/gs-1600.png" alt="Imagem gs-1600">
-            </div>
-            <div class="pages__text wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
-                <p>
-                    Com uma linha completa de perfuratrizes horizontais direcionais de 5 a 1200 toneladas, 
-                    a Goodeng atende tanto ao mercado chinês quanto ao de exportação, destacando-se pela inovação e reconhecimento internacional.
-                </p>
-            </div>
-        </section>
-        <section class="pages__content">
-            <div class="pages__text wow fadeInLeft"data-wow-duration="2s" data-wow-delay="1s">
-                <p>
-                    Agora, com a Ironmak como representante oficial no Brasil, 
-                    essa expertise em máquinas HDD de alta qualidade está disponível no país, 
-                    oferecendo as mais avançadas soluções para o setor.
-                </p>
-            </div>
-            <div class="pages__image wow fadeInDown"data-wow-duration="2s" data-wow-delay="1s">
-                <img src="assets/img/gs-320-ls.png" alt="imagem gs-320-ls">
-            </div>
-        </section>
-        
-        <section>
             <!-- Sessão de Representações -->
             <section id="representations" class="representations py-5">
                 <div class="container">
@@ -78,7 +108,7 @@
                         <!-- Representação : Goodeng -->
                         <div class="col-md-4 mb-4">
                             <div class="card-rep text-center h-100">
-                                <a href="/goodeng.html">
+                                <a href="goodeng.html">
                                     <img class="card-img-top" src="assets/img/goodeng-brasil.png"
                                         alt="Logo Goodeng Brasil">
                                 </a>
@@ -103,7 +133,7 @@
                         <!-- Representação : Sunhunk -->
                         <div class="col-md-4 mb-4">
                             <div class="card-rep text-center h-100">
-                                <a href="https://www.sunhunk.com/" target="_blank">
+                                <a href="sunhunk.html" target="_blank">
                                     <img class="card-img-top" src="assets/img/sunhunk-brasil.png"
                                         alt="Logo Sunhunk Brasil">
                                 </a>
@@ -116,6 +146,8 @@
                     </div>
                 </div>
             </section>
+
+
         </section>
 
     </main>
