@@ -5,7 +5,9 @@
 @import url('sections.css');
 @import url('footer.css');
 @import url('buttons.css');
-@import 'about.css';
+@import url('about.css');
+@import url('contact.css');
+@import url('pages.css');
 
 /* Estilos globais */
 * {
