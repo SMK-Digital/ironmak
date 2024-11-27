@@ -9,6 +9,21 @@
 @import url('contact.css');
 @import url('pages.css');
 
+/* Fontes Personalizadas */
+@font-face {
+    font-family: 'Audiowide';
+    src: url('../fonts/Audiowide-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Automata';
+    src: url('../fonts/AUTOMATA-DISPLAY.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Estilos globais */
 * {
     margin: 0;
