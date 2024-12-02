@@ -1,32 +1,80 @@
 footer {
     background-color: #333;
     color: white;
-    padding: 1rem 2rem;
     text-align: center;
 }
 
-footer ul {
+.footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.footer__column {
+    flex: 1 1 calc(25% - 1rem); /* Colunas responsivas */
+    min-width: 200px;
+    border-left: #aa650b 2px solid;
+    border-right: #aa650b 2px solid;
+    border-radius: 6px;
+    padding: 0.8rem;
+}
+
+.footer__column h4 {
+    color: #eb8a09;
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+    font-family: 'Audiowide', Arial, sans-serif;
+    justify-content: center;
+}
+
+.footer__logo {
+    max-width: 150px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer__logo:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.footer__column p,
+.footer__column ul {
+    margin: 0;
+    color: #ccc;
+    font-family: 'Automata', Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.6;
+}
+
+.footer__column ul {
     padding: 0;
     list-style: none;
-    text-align: center;
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 0;
 }
 
-footer li {
-    padding: 0 5px;
+.footer__column ul li {
+    margin: 0.5rem 0;
 }
 
-footer ul a {
+.footer__column ul li a{
     font-family: 'Automata', Courier, monospace;
     color: inherit;
     text-decoration: none;
     opacity: 0.8;
+    transition: opacity 0.3s ease;
 }
 
-footer ul a :hover {
+.footer__column ul li a:hover {
     opacity: 1;
+    color: #ffae00;
 }
 
 .footer__social {
@@ -58,6 +106,59 @@ footer ul a :hover {
 
 }
 
+.logo-span {
+    color: #c97200;
+    font-family: 'Automata', Courier, monospace;
+    font-weight: 600;
+}
+
+/* Coluna Contato */
+.footer__column h4 {
+    color: #eb8a09;
+    margin-bottom: 1rem;
+    font-family: 'Audiowide', Arial, sans-serif;
+}
+
+.footer__contact p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin: 0.5rem 0;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.footer__contact p:hover {
+    color: #eb8a09; /* Destaca o texto ao passar o mouse */
+}
+
+.footer__contact i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #4caf50; /* Cor verde para o ícone do WhatsApp */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer__contact a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    opacity: 0.85;
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.footer__contact a:hover {
+    opacity: 1;
+    color: #ffae00;
+}
+
+.footer__contact p:hover i {
+    transform: scale(1.2); /* Ampliação do ícone ao passar o mouse */
+    color: #eb8a09; /* Cor do ícone no hover */
+}
+
+/* Coluna Copy */
 .footer__copy {
     padding: 10px;
     background: #1d1d1d;
@@ -66,6 +167,11 @@ footer ul a :hover {
     font-size: 13px;
     color: #aaa;
     margin-bottom: 0;
+    width: 100vw;
+    left: 0;
+    right: 0;
+    position: relative;
+    box-sizing: border-box;
 }
 
 .footer__copy a{
@@ -78,8 +184,19 @@ footer ul a :hover {
     color: #c97200;
 }
 
-.logo-span {
-    color: #c97200;
-    font-family: 'Automata', Courier, monospace;
-    font-weight: 600;
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__column {
+        text-align: center;
+        width: 100%;
+        border-top: #aa650b 2px solid;
+        border-bottom: #aa650b 2px solid;
+        border-left: none;
+        border-right: none;
+    }
 }

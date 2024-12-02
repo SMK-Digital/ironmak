@@ -22,7 +22,6 @@
     z-index: -1;
 }
 
-
 .about-content-page {
     display: flex;
     justify-content: space-around;
@@ -41,6 +40,92 @@
     border-radius: 10px;
 }
 
+.about {
+    /* background-color: #c0740383; */
+    padding: 60px 0;
+    margin: 0 5px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.623);
+}
+
+.about h2 {
+    text-align: center;
+    font-family: 'Audiowide', Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    color: #eb8a09;
+    margin-bottom: 30px;
+}
+
+.mission p {
+    text-align: center;
+    font-family: 'Automata', Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; /* Adiciona espaço entre os cards */
+}
+
+.card-about {
+    border: 2px solid #eb8a09;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.623);
+    transition: transform 0.3s;
+    background-color: rgba(0, 0, 0, 0.911);
+    border-radius: 5px;
+    padding: 20px;
+    flex: 1 1 30%; /* Flexibilidade para os cards */
+}
+
+.card-about:hover {
+    transform: translateY(-10px);
+    border-bottom: inset 10px #4b310f;
+}
+
+.icon-and-title {
+    display: flex;
+    align-items: center; /* Alinha verticalmente no centro */
+    gap: 10px; /* Espaço entre o ícone e o título */
+}
+
+.card-title-about {
+    border: none;
+    margin: 0;
+    font-family: 'Automata', Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    color: #fff;
+ 
+}
+
+.card-text-about {
+    padding: 10px 3px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    border-top: #aa650b 2px solid;
+    border-bottom: #aa650b 2px solid;
+    border-radius: 6px;
+}
+
+/* Icones */
+.icon-size-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem; /* Tamanho do ícone */
+    color: #ffffff;
+    background-color: #eb8a09;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    border-radius: 100%;
+    border: groove 5px #aa650b;
+    flex-shrink: 0;
+}
 
 /* Responsividade */
 @media (max-width: 768px) {
@@ -51,5 +136,20 @@
     .about-page::before {
         background-attachment: fixed;
         background-size: cover;
+    }
+    .about h2 {
+        font-size: 2rem;
+    }
+
+    .card-title-about {
+        font-size: 1.2rem;
+    }
+
+    .card-text-about {
+        font-size: 0.9rem;
+    }
+
+    .icon-size-about {
+        font-size: 2.5rem; /* Reduz o tamanho do ícone para dispositivos móveis */
     }
 }
